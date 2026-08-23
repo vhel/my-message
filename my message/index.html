@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Message for You</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Decorative background elements -->
+  <div class="stars"></div>
+
+  <!-- Animated flowers -->
+  <img src="assets/sunflower.png" class="flower flower-one" alt="">
+  <img src="assets/rose.png" class="flower flower-two" alt="">
+  <img src="assets/sunflower.png" class="flower flower-three" alt="">
+
+  <!-- Animated butterflies -->
+  <img src="assets/butterfly.png" class="butterfly butterfly-one" alt="">
+  <img src="assets/butterfly.png" class="butterfly butterfly-two" alt="">
+
+  <!-- Opening screen -->
+  <section id="welcomeScreen" class="screen">
+    <div class="welcome-card">
+      <img src="assets/hello.gif" class="hello-gif" alt="Hello">
+
+      <h1>Hello, Ryl! 🌻</h1>
+
+      <p class="intro-text">
+        I prepared a little message for you.
+      </p>
+
+      <button id="openButton">Tap to Open 💛</button>
+    </div>
+  </section>
+
+  <!-- Main message screen -->
+  <section id="messageScreen" class="screen hidden">
+    <div class="message-container">
+
+
+      <!-- Letter, photo collage, and fireflies -->
+      <div class="letter-stage">
+
+        <!-- Small photo frames around the envelope -->
+        <div class="memory-photo photo-upper-left">
+          <img src="assets/5.jpg" alt="Special memory">
+        </div>
+
+        <div class="memory-photo photo-middle-right">
+          <img src="assets/1.jpg" alt="Special memory">
+        </div>
+
+        <div class="memory-photo photo-lower-left">
+          <img src="assets/2.jpg" alt="Special memory">
+        </div>
+
+        <!-- Blinking fireflies -->
+        <span class="firefly firefly-1"></span>
+        <span class="firefly firefly-2"></span>
+        <span class="firefly firefly-3"></span>
+        <span class="firefly firefly-4"></span>
+        <span class="firefly firefly-5"></span>
+        <span class="firefly firefly-6"></span>
+        <span class="firefly firefly-7"></span>
+        <span class="firefly firefly-8"></span>
+
+        <!-- Envelope -->
+        <div id="envelope" class="envelope">
+          <div class="envelope-back"></div>
+
+          <!-- Short preview shown before opening -->
+          <div class="letter">
+            <p class="message-title">My Message for you!</p>
+
+            <p>
+              I made something special just for you. Tap the envelope to
+              open the full message. 💛
+            </p>
+          </div>
+
+          <!-- Front and flap are required for the animation -->
+          <div class="envelope-front"></div>
+          <div class="envelope-flap"></div>
+        </div>
+
+        <!-- Full long message: appears after opening the envelope -->
+        <article id="fullLetter" class="full-letter">
+          <h2>For You 💛</h2>
+
+          <p>
+            Hi po, just my random message.
+
+            Uhm, alam ko na before sinabihan mo na akong mag-stop, but honestly, my feelings for you
+            still remain the same. I still like you kahit alam kong hindi na dapat, and I’m not sorry
+            for what I feel because it’s genuine. I’m not doing these things expecting anything in return.
+            Gusto ko lang maging totoo sa nararamdaman ko. I just want you to know that you deserve to be
+            cared for, treated right, and loved genuinely without having to ask for it. As long as God and
+            you allow me to, I’ll continue showing you how much you mean to me, with no regrets. Seeing you
+            happy is one of my answered prayers. I always pray that you’ll be genuinely happy, safe, healthy,
+            successful, and most importantly, treated right by the right person because you deserve it.
+            Basta masaya ka, I’m okay with it.         </p>
+
+          <p>
+            I know it’s my choice to stay and keep on choosigng to, but if my presence starts to ruin anything
+            (if there's anything that I will cause to ruin things let me know), I’ll step back because I don’t
+            want to be the reason for it. Honestly, I still want to pursue you, but I know there’s someone you
+            like, and I respect that. For now, doing simple things for you—bringing you food, cooking for you
+            kahit hindi ako magaling hehe, and taking care of you in my own little ways. I never expected that
+            I’d do things I’ve never done before, but I’m genuinely happy doing them.
+          </p>
+
+          <p>
+            I’m also super proud of you. You’re an amazing mom to your little princess, and I admire how strong
+            you are despite everything life throws at you. I can’t wait to see you succeed and achieve the things
+            you deserve. Always remember that I’m here to support you in the things that help you grow and make you
+            happy. No matter what happens, Vhel will always care and be here for you. I’ll always pray that God guides,
+            protects, and keeps you safe. And lastly, gusto ko lang mag-thank you sa’yo for so many things.
+          </p>
+
+          <p class="full-signature">
+            -Vhel 
+          </p>
+        </article>
+
+      </div>
+
+      <!-- Only one instruction -->
+      <p class="instruction">Tap the envelope to open your message 💌</p>
+
+      <!-- Song / music controls -->
+      <div class="song-note">
+        <p>
+          <em>“Beautiful” by Bazzi ft. Camila Cabello</em>
+        </p>
+
+        <button id="musicButton" class="music-button">
+          Play music ♪
+        </button>
+
+        <audio id="song" controls preload="none">
+          <source src="assets/beautiful by bazzi.mp3.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
